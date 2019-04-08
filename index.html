@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Account Balance</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h3>Account Balance</h3>
+      </div>
+    </header>
+    <main>
+      <div class="flex-container">
+        <div class="input-fields">
+          <div class="form-field">
+            <input type="text" class="description" placeholder="Description" />
+          </div>
+          <div>
+            <input type="text" class="amount" placeholder="Amount" />
+          </div>
+          <div>
+            <select>
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>
+            </select>
+          </div>
+          <div>
+            <button>Add</button>
+          </div>
+        </div>
+        <small class="feedback"></small>
+
+        <div class="transactions">
+          <div class="incomes-wrapper incomes transaction"></div>
+          <div class="expenses-wrapper expenses transaction"></div>
+        </div>
+        <div class="balance-wrapper balance"></div>
+      </div>
+    </main>
+    <footer>
+      Copyright
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
